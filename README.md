@@ -120,24 +120,22 @@ These relationships provided an initial indication that several financial ratios
 
 ## Initial KMO and MSA
 
-The initial assessment used all 11 financial ratios.
+The initial KMO value was **0.4471**, which was below 0.50. This indicated that the original 11 variables were not sufficiently suitable for PCA. The individual MSA values were then examined to identify variables with weak suitability for PCA.
 
-Initial KMO and MSA
+Seven variables had MSA values below 0.50. The variables were removed one at a time, starting with the variable with the lowest MSA value. After each removal, the KMO value was recalculated to check whether the suitability of the dataset improved.
 
-The initial KMO value was 0.4471, which was below the commonly used threshold of 0.50, indicating that the original 11 variables were not sufficiently suitable for PCA. The individual MSA values were then examined to identify variables that contributed less to the correlation structure.
+## Iterative Variable Reduction
 
-Seven variables had MSA values below 0.50. Variables were removed one at a time, starting with the variable having the lowest MSA value, and the KMO value was recalculated after each removal.
+| Stage | Variable Removed           |    MSA | KMO After Removal | Explanation                                                                |
+| ----- | -------------------------- | -----: | ----------------: | -------------------------------------------------------------------------- |
+| 1     | Asset Turnover (AT)        | 0.2405 |            0.4761 | Had the lowest MSA, indicating weak suitability for PCA.                   |
+| 2     | Inventory Turnover (IT)    | 0.2646 |            0.5323 | Had a low MSA, and its removal improved the KMO value above 0.50.          |
+| 3     | Gross Margin (GM)          | 0.2808 |            0.5502 | Had a low MSA and contributed less to the common correlation structure.    |
+| 4     | Net Profit Margin (NPM)    | 0.4298 |            0.5826 | Its MSA remained below 0.50, so it was removed to improve PCA suitability. |
+| 5     | Debt-to-Equity Ratio (D/E) | 0.3887 |            0.6152 | Had a low MSA after the previous variables were removed.                   |
+| 6     | Return on Equity (ROE)     | 0.4103 |            0.6229 | Had a low MSA, and its removal further improved the overall KMO value.     |
 
-Iterative Variable Reduction
-Stage	Variable Removed	MSA	KMO After Removal	Reason
-1	Asset Turnover (AT)	0.2405	0.4761	Lowest MSA; weak suitability for PCA
-2	Inventory Turnover (IT)	0.2646	0.5323	Low MSA; removal improved overall KMO
-3	Gross Margin (GM)	0.2808	0.5502	Low MSA; limited contribution to the common structure
-4	Net Profit Margin (NPM)	0.4298	0.5826	MSA remained below 0.50
-5	Debt-to-Equity Ratio (D/E)	0.3887	0.6152	Low MSA after previous removals
-6	Return on Equity (ROE)	0.4103	0.6229	Low MSA and removal further improved KMO
-
-After each variable was removed, the KMO value increased, indicating improved suitability for PCA. The process stopped when the remaining five variables had acceptable individual MSA values and the overall KMO reached 0.6229.
+After each variable was removed, the KMO value increased, indicating improved suitability for PCA. The process was stopped when the remaining five variables had acceptable MSA values and the overall KMO reached **0.6229**.
 
 After the iterative variable reduction, five financial ratios were retained:
 
