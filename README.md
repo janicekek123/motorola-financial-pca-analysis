@@ -123,7 +123,7 @@ These relationships provided an initial indication that several financial ratios
 
 The initial KMO value was **0.4471**, which was below 0.50. This indicated that the original 11 variables were not sufficiently suitable for PCA. The individual MSA values were then examined to identify variables with weak suitability for PCA.
 
-Seven variables had MSA values below 0.50. The variables were removed one at a time, starting with the variable with the lowest MSA value. After each removal, the KMO value was recalculated to check whether the suitability of the dataset improved.
+Six variables had MSA values below 0.50. The variables were removed one at a time, starting with the variable with the lowest MSA value. After each removal, the KMO value was recalculated to check whether the suitability of the dataset improved.
 
 ## Iterative Variable Reduction
 
