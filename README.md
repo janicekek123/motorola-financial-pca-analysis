@@ -30,6 +30,7 @@ The study aims to:
 
 The data were obtained from Motorola Solutions, Inc.'s publicly available quarterly financial statements through Macrotrends. The study uses consolidated financial data at the global corporate level and covers 60 quarterly observations from Q3 2011 to Q2 2026. Only the selected variables required for the 11 financial ratios were used in this analysis. Data were manually compiled into Microsoft Excel before being imported into Google Colab for data preparation and statistical analysis.
 
+Dataset URL: https://www.macrotrends.net/stocks/charts/MSI/motorola-solutions/balance-sheet?freq=Q
 ### Financial Ratios
 
 | Category      | Financial Ratios                                            |
